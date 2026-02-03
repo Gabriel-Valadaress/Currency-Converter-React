@@ -3,15 +3,33 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
 }
 
 .app-container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
+  padding: 20px;
+}
+
+.app-container > p {
+  background: white;
+  padding: 24px 40px;
+  border-radius: 16px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #667eea;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
 }
